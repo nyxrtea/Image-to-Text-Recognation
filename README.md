@@ -24,7 +24,8 @@ Thresholding merupakan salah satu teknik segmentasi yang umum digunakan untuk me
 📁 Pengolahan Citra/
 ├── README.md               # Dokumentasi proyek (file ini)
 ├── PCD_OCR.ipnyb           # Berisi notebook proses dan kode yang dijalankan 
-├── image_pcd.zip           # Dataset yang digunakan 
+├── image_pcd.zip           # Dataset yang digunakan
+├── dataset_cnn.zip         # Dataset yang digunakan untuk algoritma cnn 
 ├── requirements.txt        # Daftar pustaka yang dibutuhkan
 ```
 ---
@@ -42,7 +43,7 @@ Thresholding merupakan salah satu teknik segmentasi yang umum digunakan untuk me
 3. **Jalankan Notebook**:
    Buka `PCD_OCR.ipynb` menggunakan Jupyter Notebook atau Google Colab, lalu jalankan sel-sel kode secara berurutan.
 4. **Dataset**:
-   Pastikan file `image_pcd.zip` berada di direktori yang sama dengan notebook.
+   Pastikan file `image_pcd.zip` dan `dataset_cnn.zip` berada di direktori yang sama dengan notebook.
 
 ---
 
@@ -52,7 +53,10 @@ Thresholding merupakan salah satu teknik segmentasi yang umum digunakan untuk me
 - **EasyOCR** : Untuk ekstraksi teks dari gambar.
 - **Matplotlib** : Untuk visualisasi hasil preprocessing dan thresholding.
 - **NumPy** : Untuk manipulasi array dan operasi matematika.
-
+- **Scikit-learn (sklearn)** : Untuk pembagian dataset (train/test split) dan preprocessing label.
+- **TensorFlow & Keras** : Untuk pembangunan dan pelatihan model CNN (Convolutional Neural Network).
+- **ImageDataGenerator (Keras)** : Digunakan untuk augmentasi data citra saat training.
+- **EarlyStopping (Keras)** : Callback untuk menghentikan pelatihan ketika validasi berhenti membaik, menghindari overfitting.
 ---
 
 ## Lisensi
